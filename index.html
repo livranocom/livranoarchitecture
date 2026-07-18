@@ -1,215 +1,75 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonello Livrano Architect</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500&display=swap" rel="stylesheet">
+    <style>
+        :root { --grid-gap: 5px; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Switzer', sans-serif; background-color: #ffffff; color: #000000; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+        .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--grid-gap); padding: var(--grid-gap); width: 100%; }
+        .text-section { grid-column: 3 / 5; padding: 10vh 0; font-size: 1.25rem; line-height: 1.4; }
+        .text-section h1, .text-section h2, .text-section h3 { font-weight: 500; margin-bottom: 1.5rem; font-size: 1.25rem; }
+        .text-section p { margin-bottom: 1.5rem; font-weight: 400; }
+        .text-section a { color: #000000; text-decoration: none; border-bottom: 1px solid #000000; transition: opacity 0.3s ease; }
+        .text-section a:hover { opacity: 0.5; }
+        .full-image { grid-column: 1 / 5; width: 100%; height: calc(100vh - 10px); object-fit: cover; display: block; background-color: #f4f4f4; }
+        .vertical-gallery { margin-top: 5vh; margin-bottom: 5vh; }
+        .gallery-item { grid-column: 1 / 5; display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--grid-gap); margin-bottom: 5vh; }
+        .gallery-item img { grid-column: 1 / 5; width: 100%; height: 85vh; object-fit: cover; }
+        .gallery-caption { grid-column: 3 / 5; padding-top: 10px; font-size: 1rem; }
+        .footer-grid { border-top: 1px solid #000000; padding-bottom: 5vh; margin-top: 10vh; }
+    </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Antonello Livrano Architect&lt;/title&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Caricamento del font Switzer da Fontshare --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500&amp;display=swap" rel="stylesheet"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>:root {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--grid-gap: 5px; /* Margine e gap a 5px come richiesto */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>* {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Switzer', sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #ffffff;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #000000;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>-webkit-font-smoothing: antialiased;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>-moz-osx-font-smoothing: grayscale;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Griglia svizzera a 4 colonne */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.grid {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: repeat(4, 1fr);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>gap: var(--grid-gap);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: var(--grid-gap);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Regola per i testi: confinati esclusivamente nelle ultime 2 colonne (colonne 3 e 4) */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.text-section {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>grid-column: 3 / 5;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 10vh 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.25rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.4;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.text-section h1,<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.text-section h2,<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.text-section h3 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 500;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.25rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.text-section p {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 400;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.text-section a {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #000000;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid #000000;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: opacity 0.3s ease;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.text-section a:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0.5;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Immagini a tutto schermo (occupano tutte e 4 le colonne) */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.full-image {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>grid-column: 1 / 5;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height: calc(100vh - 10px); /* 100vh meno i margini per mantenere l'allineamento perfetto */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>object-fit: cover;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f4f4f4; /* Colore di fallback */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Galleria verticale */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.vertical-gallery {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 5vh;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 5vh;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.gallery-item {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>grid-column: 1 / 5;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: repeat(4, 1fr);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>gap: var(--grid-gap);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 5vh;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.gallery-item img {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>grid-column: 1 / 5;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height: 85vh; /* Formato verticale e imponente */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>object-fit: cover;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.gallery-caption {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>grid-column: 3 / 5;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding-top: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Footer Layout */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.footer-grid {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-top: 1px solid #000000;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding-bottom: 5vh;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 10vh;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Hero Testo --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="grid"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="text-section" style="padding-top: 5vh; padding-bottom: 5vh;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1&gt;Antonello Livrano&lt;br&gt;Architecture is subtraction.&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Hero Immagine --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="grid"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Immagine di placeholder architettonica --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;img class="full-image" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&amp;w=2070&amp;auto=format&amp;fit=crop" alt="Architecture Space"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Manifesto --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="grid"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="text-section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Designing the Silence.&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;We do not decorate space; we reveal it. Rooted in the Mediterranean culture of light and mass, our architecture is a continuous exercise in essentialism.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Whether a private home or a high-end restaurant, every project is built on proportion, raw materiality, and the power of the void. We design places that defy fleeting trends—spaces where the visitor is caught by sudden emotion, unexpected light, and profound atmosphere.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Galleria Verticale --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="grid vertical-gallery"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Progetto 1 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="gallery-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&amp;w=2069&amp;auto=format&amp;fit=crop" alt="COPO Restaurant"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="gallery-caption"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;strong&gt;COPO&lt;/strong&gt; / Lisbon / Hospitality</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Progetto 2 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="gallery-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&amp;w=2070&amp;auto=format&amp;fit=crop" alt="House in the Quarry"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="gallery-caption"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;strong&gt;House in the Quarry&lt;/strong&gt; / Arrabida / Residential</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Progetto 3 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="gallery-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&amp;w=2070&amp;auto=format&amp;fit=crop" alt="Nocturne Bar"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="gallery-caption"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;strong&gt;Nocturne&lt;/strong&gt; / Milan / Hospitality&lt;br&gt;&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#"&gt;&amp;rarr; View all projects&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Practice / Metodo --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="grid"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="text-section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Practice&lt;/h2&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 style="margin-top: 3rem;"&gt;Residential&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Cultured, timeless domestic spaces. We treat the home as an intimate sanctuary, balancing the solidity of matter with the warmth of the essential.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 style="margin-top: 3rem;"&gt;Hospitality&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Bars and restaurants conceived with the comfort of a domestic scale. We craft communal experiences where the architecture itself becomes an act of welcoming and surprise.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 style="margin-top: 3rem;"&gt;Spatial Identity&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;An international vision applied to physical space. Every choice is reasoned, striving for formal purity and a rigorous dialogue between interior and exterior.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Footer --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="grid footer-grid"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="text-section" style="padding-top: 5vh; padding-bottom: 2vh;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;&lt;strong&gt;Antonello Livrano Architect&lt;/strong&gt;&lt;br&gt;Lisbon, PT&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p style="margin-top: 2rem;"&gt;Let us discuss your next space.&lt;br&gt;&lt;a href="mailto:info@livrano.com"&gt;info@livrano.com&lt;/a&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p style="margin-top: 4rem;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#"&gt;Instagram&lt;/a&gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#"&gt;Journal&lt;/a&gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#"&gt;Privacy Policy&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+    <div class="grid">
+        <div class="text-section" style="padding-top: 5vh; padding-bottom: 5vh;">
+            <h1>Antonello Livrano<br>Architecture is subtraction.</h1>
+        </div>
+    </div>
+    <div class="grid">
+        <img class="full-image" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" alt="Architecture Space">
+    </div>
+    <div class="grid">
+        <div class="text-section">
+            <h2>Designing the Silence.</h2>
+            <p>We do not decorate space; we reveal it. Rooted in the Mediterranean culture of light and mass, our architecture is a continuous exercise in essentialism.</p>
+            <p>Whether a private home or a high-end restaurant, every project is built on proportion, raw materiality, and the power of the void. We design places that defy fleeting trends—spaces where the visitor is caught by sudden emotion, unexpected light, and profound atmosphere.</p>
+        </div>
+    </div>
+    <div class="grid vertical-gallery">
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop" alt="COPO Restaurant">
+            <div class="gallery-caption"><strong>COPO</strong> / Lisbon / Hospitality</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop" alt="House in the Quarry">
+            <div class="gallery-caption"><strong>House in the Quarry</strong> / Arrabida / Residential</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=2070&auto=format&fit=crop" alt="Nocturne Bar">
+            <div class="gallery-caption"><strong>Nocturne</strong> / Milan / Hospitality<br><br><a href="#">&rarr; View all projects</a></div>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="text-section">
+            <h2>Practice</h2>
+            <h3 style="margin-top: 3rem;">Residential</h3>
+            <p>Cultured, timeless domestic spaces. We treat the home as an intimate sanctuary, balancing the solidity of matter with the warmth of the essential.</p>
+            <h3 style="margin-top: 3rem;">Hospitality</h3>
+            <p>Bars and restaurants conceived with the comfort of a domestic scale. We craft communal experiences where the architecture itself becomes an act of welcoming and surprise.</p>
+            <h3 style="margin-top: 3rem;">Spatial Identity</h3>
+            <p>An international vision applied to physical space. Every choice is reasoned, striving for formal purity and a rigorous dialogue between interior and exterior.</p>
+        </div>
+    </div>
+    <div class="grid footer-grid">
+        <div class="text-section" style="padding-top: 5vh; padding-bottom: 2vh;">
+            <p><strong>Antonello Livrano Architect</strong><br>Lisbon, PT</p>
+            <p style="margin-top: 2rem;">Let us discuss your next space.<br><a href="mailto:info@livrano.com">info@livrano.com</a></p>
+            <p style="margin-top: 4rem;"><a href="#">Instagram</a> &nbsp;&nbsp;&nbsp; <a href="#">Journal</a> &nbsp;&nbsp;&nbsp; <a href="#">Privacy Policy</a></p>
+        </div>
+    </div>
 </body>
 </html>
